@@ -30,11 +30,11 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/ecommerce
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: 1234
+      SPRING_DATASOURCE_PASSWORD: password
       JWT_SECRET: bXlTdXBlclNlY3JldEtleUZvckpXVEF1dGhUb2tlbjEyMw==
       JWT_EXPIRATION: 86400000
-      RAZORPAY_KEY_ID: rzp_test_SqhjjgXMpuftmJ
-      RAZORPAY_KEY_SECRET: YjSUMeQyuC39AcmImzxZnHTd
+      RAZORPAY_KEY_ID: your_razorpay_key_id
+      RAZORPAY_KEY_SECRET: your_razorpay_key_secret
     depends_on:
       mysql:
         condition: service_healthy
