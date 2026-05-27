@@ -23,6 +23,7 @@ export default function OrderDetail() {
         .catch(() => navigate('/orders'))
         .finally(() => setLoading(false));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   if (loading) return <p style={{ padding: '2rem' }}>Loading...</p>;
