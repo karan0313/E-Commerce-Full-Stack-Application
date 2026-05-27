@@ -25,6 +25,7 @@ export default function AdminDashboard() {
   // Guard — only ADMIN
   useEffect(() => {
     if (user.role !== 'ADMIN') navigate('/');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
