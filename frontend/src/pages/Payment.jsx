@@ -24,6 +24,7 @@ export default function Payment() {
       .finally(() => setLoading(false));
 
     return () => document.body.removeChild(script);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orderId]);
 
   const handlePayment = async () => {
