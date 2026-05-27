@@ -69,6 +69,7 @@ export default function ProductDetail() {
     api.get(`/api/reviews/product/${id}`).then(r => setReviews(Array.isArray(r.data) ? r.data : []));
     api.get(`/api/reviews/product/${id}/stats`).then(r => setStats(r.data));
     api.get(`/api/reviews/product/${id}/mine`).then(r => setHasReviewed(r.data.hasReviewed));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const addToCart = async () => {
